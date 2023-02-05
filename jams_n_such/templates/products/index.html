@@ -12,13 +12,19 @@
         {{product.low_stock}}
         {{product.out_of_stock}}
     </div>
-    <div>
-        <form action="/products/{{product.id}}/delete" method="POST">
-            <button>Delete</button>
-        </form>
-    </div>
+
+    <a href="products/{{product.id}}">
+        <button>
+            Details
+        </button>
+    </a>  
 {% endfor %}
 
-<a href="/products/new">Add Product</a>
+<br>
+<a href="/products/new">
+    <button>
+        Add Product
+    </button>
+</a>
 
 {% endblock %}

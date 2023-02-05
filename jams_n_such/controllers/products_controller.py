@@ -12,11 +12,6 @@ def products():
     products = product_repository.select_all() 
     return render_template("products/index.html", all_products = products)
 
-@products_blueprint.route("/vendors")
-def vendors():
-    vendors = vendor_repository.select_all()
-    return render_template("vendors/index.html", all_vendors = vendors)
-
 @products_blueprint.route("/products/new", methods=["GET"])
 def new_product():
     vendors = vendor_repository.select_all()
@@ -40,6 +35,21 @@ def delete_product(id):
     product_repository.delete(id)
     return redirect("/products")
     
+@products_blueprint.route("/vendors")
+def vendors():
+    vendors = vendor_repository.select_all()
+    return render_template("vendors/index.html", all_vendors = vendors)
+
+@products_blueprint.route("/vendors/<id>", methods=["GET"])
+def show_vendor(id):
+    vendor = vendor_repository.select(id)
+    return render_template('vendors/show.html', vendor = vendor)
+    
+@products_blueprint.route("/products/<id>", methods=["GET"])
+def show_product(id):
+    product = product_repository.select(id)
+    return render_template('products/show.html', product = product)
+
 @products_blueprint.route("/vendors/new", methods=["GET"])
 def new_vendor():
     return render_template("vendors/new.html", all_vendors = vendors)

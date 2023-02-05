@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div>
+        {{product.name}}
+    </div>
+
+    <div>
+        <form action="/products/{{product.id}}/delete" method="POST">
+            <button>Delete</button>
+        </form>
+    </div>
+    
+{% endblock %}
