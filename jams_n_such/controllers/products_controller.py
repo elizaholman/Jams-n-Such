@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask import Blueprint
 from models.product import Product
+from models.vendor import Vendor
 import repositories.product_repository as product_repository
 import repositories.vendor_repository as vendor_repository
 
@@ -33,3 +34,25 @@ def create_product():
     product = Product(name, description, buying_price, selling_price, stock_quantity, vendor, False, False)
     product_repository.save(product)
     return redirect("/products")
+
+@products_blueprint.route("/products/<id>/delete", methods=["POST"])
+def delete_product(id):
+    product_repository.delete(id)
+    return redirect("/products")
+    
+@products_blueprint.route("/vendors/new", methods=["GET"])
+def new_vendor():
+    return render_template("vendors/new.html", all_vendors = vendors)
+
+@products_blueprint.route("/vendors", methods=["POST"])
+def create_vendor():
+    first_name = request.form["first_name"]
+    last_name = request.form["last_name"]
+    vendor = Vendor(first_name, last_name)
+    vendor_repository.save(vendor)
+    return redirect("/vendors")
+
+@products_blueprint.route("/vendors/<id>/delete", methods=["POST"])
+def delete_vendor(id):
+    vendor_repository.delete(id)
+    return redirect("/vendors")

@@ -5,6 +5,15 @@
     <div>
         {{vendor.first_name}} {{vendor.last_name}}
     </div>
+
+    <div>
+        <form action="/vendors/{{vendor.id}}/delete" method="POST">
+            <button>Delete</button>
+        </form>
+    </div>
+
 {% endfor %}
+
+<a href="/vendors/new">Add Vendor</a>
 
 {% endblock %}

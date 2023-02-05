@@ -19,13 +19,13 @@ vendor_repository.save(vendor4)
 
 vendor_repository.select_all()
 
-product1 = Product("Strawberry Jam", "Delicious", 1, 3, 10, vendor1)
+product1 = Product("Strawberry Jam", "Delicious", 1, 3, 10, vendor1, False, False)
 product_repository.save(product1)
-product2 = Product("Blueberry Jam", "Delicious", 1, 3, 10, vendor1)
+product2 = Product("Blueberry Jam", "Delicious", 1, 3, 10, vendor1, False, False)
 product_repository.save(product2)
-product3 = Product("Apricot Jam", "Delicious", 1, 3, 10, vendor1)
+product3 = Product("Apricot Jam", "Delicious", 1, 3, 10, vendor1, False, False)
 product_repository.save(product3)
-product4 = Product("Apple Jam", "Delicious", 1, 3, 10, vendor1)
+product4 = Product("Apple Jam", "Delicious", 1, 3, 10, vendor1, False, False)
 product_repository.save(product4)
 
 
