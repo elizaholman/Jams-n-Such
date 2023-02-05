@@ -5,10 +5,16 @@
         {{product.name}}
     </div>
 
+    <p><a href="/products/{{product.id}}/edit">
+        <button>
+            Edit
+        </button>
+    </a></p>
+
     <div>
         <form action="/products/{{product.id}}/delete" method="POST">
             <button>Delete</button>
         </form>
     </div>
-    
+
 {% endblock %}

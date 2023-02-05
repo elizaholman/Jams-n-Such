@@ -3,12 +3,17 @@
 
 {{vendor.first_name}} {{vendor.last_name}}
 
+<p><a href="/vendors/{{vendor.id}}/edit">
+    <button>
+        Edit
+    </button>
+</a></p>
+
     <div>
         <form action="/vendors/{{vendor.id}}/delete" method="POST">
             <button>Delete</button>
         </form>
     </div>
-
 
 
 {% endblock %}
