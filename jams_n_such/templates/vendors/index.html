@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for vendor in all_vendors %}
+    <div>
+        {{vendor.first_name}} {{vendor.last_name}}
+    </div>
+{% endfor %}
+
+{% endblock %}

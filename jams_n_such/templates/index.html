@@ -1,17 +1,20 @@
-{% extends "base.html" %}
-{% block content %}
+<head>
+    <title>Toby-Toad</title>
+</head>
 
-{% for product in all_products %}
-    <div>
-        {{product.vendor.first_name}}
-        {{product.name}}
-        {{product.description}}
-        {{product.buying_price}}
-        {{product.selling_price}}
-        {{product.stock_quantity}}
-        {{product.low_stock}}
-        {{product.out_of_stock}}
-    </div>
-{% endfor %}
+<body>
 
-{% endblock %}
+    <header>
+
+        <div>
+            <h1>Toby-Toad's Jam Emporium</h1>
+        </div>
+    
+        <div>
+            <a href="/products">Toby's Wares</a>
+            <a href="/vendors">Vendors</a>
+        </div>
+
+    </header>
+
+</body>

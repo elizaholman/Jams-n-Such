@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for product in all_products %}
+    <div>
+        {{product.vendor.first_name}}
+        {{product.name}}
+        {{product.description}}
+        {{product.buying_price}}
+        {{product.selling_price}}
+        {{product.stock_quantity}}
+        {{product.low_stock}}
+        {{product.out_of_stock}}
+    </div>
+{% endfor %}
+
+<a href="/products/new">Add Product</a>
+
+{% endblock %}
