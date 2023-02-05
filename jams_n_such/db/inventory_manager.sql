@@ -18,4 +18,3 @@ CREATE TABLE products (
     out_of_stock BOOLEAN,
     vendor_id INT NOT NULL REFERENCES vendors(id)
 );
-

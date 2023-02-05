@@ -62,6 +62,6 @@ def products(vendor):
     results = run_sql(sql, values)
 
     for row in results:
-        product = Product(row['name'], row['description'], row['buying_price'], row['selling_price'], row['stock_quantity'], row['low_stock'], row['out_of_stock'], vendor, row['id'])
+        product = Product(row['name'], row['description'], row['buying_price'], row['selling_price'], row['stock_quantity'], vendor,  row['low_stock'], row['out_of_stock'], row['id'])
         products.append(product)
     return products
