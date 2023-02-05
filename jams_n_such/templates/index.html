@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+
 {% for product in all_products %}
     <div>
         {{product.vendor.first_name}}
@@ -10,3 +13,5 @@
         {{product.out_of_stock}}
     </div>
 {% endfor %}
+
+{% endblock %}
