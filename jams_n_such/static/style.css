@@ -1,0 +1,81 @@
+#index_body {
+    background: url("/static/images/Jams_n'_such.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+}
+
+
+#index_toby {
+    position: absolute;
+    width: 323px;
+    height: 192px;
+    left: 85px;
+    top: 60px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: lowercase;
+
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+#index_jam {
+    position: absolute;
+    width: 323px;
+    height: 192px;
+    left: 89px;
+    top: 110px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 60px;
+    text-transform: lowercase;
+
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+#index_products {
+    position: absolute;
+    width: 323px;
+    height: 344px;
+    left: 101px;
+    top: 327px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 79px;
+    text-transform: lowercase;
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+#index_vendors {
+    position: absolute;
+    width: 263px;
+    height: 86px;
+    left: 99px;
+    top: 473px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 79px;
+    text-transform: lowercase;
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+
+
+

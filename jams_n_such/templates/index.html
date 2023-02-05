@@ -1,19 +1,22 @@
 <head>
     <title>Toby-Toad</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
-<body>
+
+<body id="index_body">
 
     <header>
 
         <div>
-            <h1>Toby-Toad's Jam Emporium</h1>
+            <h1 id="index_toby">Toby-Toad's</h1> 
+            <h2 id="index_jam">Jam Emporium</h2>
         </div>
     
-        <div>
-            <a href="/products">Toby's Wares</a>
-            <a href="/vendors">Vendors</a>
+        <div class="homepage_links">
+            <a id="index_products" href="/products">Toby's Wares</a>
+            <a id="index_vendors" href="/vendors">Vendors</a>
         </div>
 
     </header>
