@@ -31,7 +31,7 @@ def create_product():
     stock_quantity = request.form["stock_quantity"]
     vendor_id = request.form["vendor_id"]
     vendor = vendor_repository.select(vendor_id)
-    product = Product(name, description, buying_price, selling_price, stock_quantity, vendor, False, False)
+    product = Product(name, description, buying_price, selling_price, stock_quantity, vendor)
     product_repository.save(product)
     return redirect("/products")
 
@@ -50,7 +50,7 @@ def update_product(id):
     stock_quantity = request.form["stock_quantity"]
     vendor_id = request.form["vendor_id"]
     vendor = vendor_repository.select(vendor_id)
-    product = Product(name, description, buying_price, selling_price, stock_quantity, vendor, False, False, id)
+    product = Product(name, description, buying_price, selling_price, stock_quantity, vendor, id)
     product_repository.update(product)
     return redirect("/products")
 
@@ -103,3 +103,4 @@ def update_vendor(id):
 def delete_vendor(id):
     vendor_repository.delete(id)
     return redirect("/vendors")
+    
