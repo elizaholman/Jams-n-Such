@@ -4,8 +4,6 @@
 {% for product in all_products %}
     <div>
         {{product.name}}
-        Buying Cost: {{product.buying_price}}
-        Selling Price: {{product.selling_price}}
     </div>
 
     {% if product.stock_quantity >=2  %}

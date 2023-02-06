@@ -5,7 +5,6 @@
     margin:0;
 }
 
-
 #index_toby {
     position: absolute;
     width: 323px;
@@ -44,8 +43,6 @@
 
 #index_products {
     position: absolute;
-    width: 323px;
-    height: 344px;
     left: 101px;
     top: 327px;
 
@@ -76,6 +73,84 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
+#base_toby {
+    position: absolute;
+    width: 323px;
+    height: 192px;
+    left: 85px;
+    top: 60px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: lowercase;
+
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+#base_jam {
+    position: absolute;
+    width: 323px;
+    height: 192px;
+    left: 89px;
+    top: 110px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 60px;
+    text-transform: lowercase;
+
+
+    color: rgba(39, 39, 39, 0.6);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 407px;
+    height: 102px;
+    left: 10px;
+    top: 200px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-transform: lowercase;
+    list-style: none;
+}
+
+
+.block {
+    position: absolute;
+    width: 155px;
+    height: 161px;
+    left: 684px;
+    top: 147px;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: lowercase;
+
+}
+#border {
+    position: absolute;
+    width: 1774.5px;
+    top: 100%;
+    left: -410px;
 
 
 
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+}

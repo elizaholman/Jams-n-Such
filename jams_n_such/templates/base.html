@@ -3,16 +3,24 @@
 
 <head>
   <title>Toby-Toad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <style> 
+      body {
+        background-image: url("/static/images/paper.png");
+      }
+    </style>
+    <header>
 
-  <header>
+    <div id="border">
+    </div>
 
     <div>
-      <h1 id="index_toby">Toby-Toad's</h1> 
-      <h2 id="index_jam">Jam Emporium</h2>
+      <h1 id="base_toby">Toby-Toad's</h1> 
+      <h2 id="base_jam">Jam Emporium</h2>
     </div>
 
     <nav>
@@ -25,7 +33,7 @@
 
   </header>
 
-  <div>
+  <div class="block">
     {% block content %}
     {% endblock %}
   </div>
@@ -33,3 +41,4 @@
 </body>
 
 </html>
+
