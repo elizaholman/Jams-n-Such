@@ -6,8 +6,8 @@
 }
 
 #index_toby {
-    position: absolute;
-    width: 323px;
+    position: fixed;
+    width: 500px;
     height: 192px;
     left: 85px;
     top: 60px;
@@ -15,7 +15,7 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 4vw;
     line-height: 60px;
     text-transform: lowercase;
 
@@ -24,8 +24,8 @@
 }
 
 #index_jam {
-    position: absolute;
-    width: 323px;
+    position: fixed;
+    width: 500px;
     height: 192px;
     left: 89px;
     top: 110px;
@@ -33,7 +33,7 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 46px;
+    font-size: 3.2vw;
     line-height: 60px;
     text-transform: lowercase;
 
@@ -42,14 +42,14 @@
 }
 
 #index_products {
-    position: absolute;
+    position: fixed;
     left: 101px;
     top: 327px;
 
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 79px;
     text-transform: lowercase;
 
@@ -57,7 +57,7 @@
 }
 
 #index_vendors {
-    position: absolute;
+    position: fixed;
     width: 263px;
     height: 86px;
     left: 99px;
@@ -66,16 +66,23 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 79px;
     text-transform: lowercase;
 
     color: rgba(39, 39, 39, 0.6);
 }
 
+#base_body {
+    background: url("/static/images/paper.png");
+    background-repeat:repeat;
+    background-size: cover;
+    margin: 0;
+}
+
 #base_toby {
-    position: absolute;
-    width: 323px;
+    position: fixed;
+    width: 500px;
     height: 192px;
     left: 85px;
     top: 60px;
@@ -83,7 +90,7 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 4vw;
     line-height: 60px;
     text-transform: lowercase;
 
@@ -92,8 +99,8 @@
 }
 
 #base_jam {
-    position: absolute;
-    width: 323px;
+    position: fixed;
+    width: 500px;
     height: 192px;
     left: 89px;
     top: 110px;
@@ -101,7 +108,7 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 46px;
+    font-size: 3.2vw;
     line-height: 60px;
     text-transform: lowercase;
 
@@ -112,7 +119,7 @@
 .menu {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
+    position: fixed;
     width: 407px;
     height: 102px;
     left: 10px;
@@ -121,15 +128,18 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2vw;
     line-height: 48px;
     text-transform: lowercase;
     list-style: none;
 }
 
+.menu > li > a {
+    color: rgba(39, 39, 39, 0.6);
+}
 
 .block {
-    position: absolute;
+    position: fixed;
     width: 155px;
     height: 161px;
     left: 684px;
@@ -142,15 +152,18 @@
     line-height: 60px;
     text-transform: lowercase;
 
+    display: grid;
+    grid-template-columns: 30%, 30%, 30%;
+    grid-area: 1 / col4-start / last-line / 6;
 }
+
 #border {
-    position: absolute;
-    width: 1774.5px;
-    top: 100%;
-    left: -410px;
-
-
+    position: fixed;
+    width: 100%;
+    top: 210px;
+    left: -180px;
 
     border: 1px solid #000000;
     transform: rotate(90deg);
 }
+
