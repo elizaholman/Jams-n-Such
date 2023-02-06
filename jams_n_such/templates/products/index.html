@@ -3,15 +3,18 @@
 
 {% for product in all_products %}
     <div>
-        {{product.vendor.first_name}}
         {{product.name}}
-        {{product.description}}
-        {{product.buying_price}}
-        {{product.selling_price}}
-        {{product.stock_quantity}}
-        {{product.low_stock}}
-        {{product.out_of_stock}}
+        Buying Cost: {{product.buying_price}}
+        Selling Price: {{product.selling_price}}
     </div>
+
+    {% if product.stock_quantity >=2  %}
+        In Stock
+    {% elif product.stock_quantity == 0 %}
+        Out of Stock
+    {% else %}
+        Low Stock
+    {% endif %}
 
     <a href="products/{{product.id}}">
         <button>

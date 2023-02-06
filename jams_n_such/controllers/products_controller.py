@@ -64,7 +64,6 @@ def delete_product(id):
 
 
 
-    
 @products_blueprint.route("/vendors")
 def vendors():
     vendors = vendor_repository.select_all()

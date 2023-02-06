@@ -1,6 +1,6 @@
 class Product:
 
-    def __init__(self, name, description, buying_price, selling_price, stock_quantity, vendor, low_stock, out_of_stock, id = None):
+    def __init__(self, name, description, buying_price, selling_price, stock_quantity, vendor, low_stock = False, out_of_stock = False, id = None):
         self.name = name
         self.description = description
         self.buying_price = buying_price
@@ -10,3 +10,4 @@ class Product:
         self.low_stock = low_stock
         self.out_of_stock = out_of_stock
         self.id = id
+
