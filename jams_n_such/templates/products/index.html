@@ -8,17 +8,21 @@
                 {{product.name}}
             </div>
 
-            {% if product.stock_quantity >=2  %}
+            {% if product.stock_quantity >= 2  %}
                 In Stock
             {% elif product.stock_quantity == 0 %}
                 Out of Stock
             {% else %}
                 Low Stock
             {% endif %}
+            
+            Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%
 
-            <a href="products/{{product.id}}">
+            <div class="details">
+                <a href="products/{{product.id}}">
                     Details
-            </a>  
+                </a>  
+            </div>
         </div>
     {% endfor %}
 </div>
