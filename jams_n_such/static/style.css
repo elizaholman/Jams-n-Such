@@ -4,6 +4,30 @@
     background-size: cover;
 }
 
+.index_background {
+    background: url("/static/images/paper.png");
+    background-repeat:repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.base_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.nav {
+    grid-row-start: 2;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    padding-left: 350px;
+    font-size: 3vw;
+}
+
 .title {
     padding-left: 60px;
     padding-top: 60px;
@@ -46,14 +70,6 @@
 }
 
 
-.index_background {
-    background: url("/static/images/paper.png");
-    background-repeat:repeat;
-    background-size: cover;
-    margin: 0;
-}
-
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -86,21 +102,32 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
-#border {
-    border-left: 1px solid #000000;
-}
-
 
 #add_vendor > a {
     color: rgba(39, 39, 39, 0.6);
 }
 
-.add_product {
-
-}
-
 #add_product > a {
     color: rgba(39, 39, 39, 0.6);
 }
+
+
+.index_products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 95%;
+    grid-row-gap: 30px;
+    margin-left: 40%;
+    border: 10px solid black;
+}
+
+.add_product {
+    position: bottom;
+}
+/* 
+#border {
+    border-left: 10px solid #000000;
+    height: 500px;
+} */
 
 

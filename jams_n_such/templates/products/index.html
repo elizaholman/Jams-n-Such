@@ -1,31 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="index_products">
-    {% for product in all_products %}
-        <div>
+
+<div class="subtitle"> Toby's Wares </div>
+
+
+    <div class="index_products">
+        {% for product in all_products %}
             <div>
-                {{product.name}}
-            </div>
+                <div>
+                    {{product.name}}
+                </div>
 
-            {% if product.stock_quantity >= 2  %}
-                In Stock
-            {% elif product.stock_quantity == 0 %}
-                Out of Stock
-            {% else %}
-                Low Stock
-            {% endif %}
-            
-            Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%
+                {% if product.stock_quantity >= 2  %}
+                    In Stock
+                {% elif product.stock_quantity == 0 %}
+                    Out of Stock
+                {% else %}
+                    Low Stock
+                {% endif %}
 
-            <div class="details">
-                <a href="products/{{product.id}}">
-                    Details
-                </a>  
+                <div class="details">
+                    <a href="products/{{product.id}}">
+                        Details
+                    </a>  
+                </div>
             </div>
-        </div>
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
+
+
 
 <div id="add_product">
     <a href="/products/new" class="add_product">
