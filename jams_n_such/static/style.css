@@ -5,53 +5,8 @@
 }
 
 .title {
-    display:flex;
-    flex-direction: column;
     padding-left: 60px;
-    padding-top: 10px;
-
-    font-family: 'Gloria Hallelujah';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 60px;
-    text-transform: lowercase;
-    color: rgba(39, 39, 39, 0.6);
-}
-
-#index_products {
-    font-family: 'Gloria Hallelujah';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3vw;
-    line-height: 79px;
-    text-transform: lowercase;
-    color: rgba(39, 39, 39, 0.6);
-}
-
-#index_vendors {
-    font-family: 'Gloria Hallelujah';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3vw;
-    line-height: 79px;
-    text-transform: lowercase;
-    color: rgba(39, 39, 39, 0.6);
-}
-
-.details > a {
-    color:rgba(39, 39, 39, 0.6);
-}
-
-
-#base_body {
-    background: url("/static/images/paper.png");
-    background-repeat:repeat;
-    background-size: cover;
-    margin: 0;
-}
-
-#base_toby {
+    padding-top: 60px;
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
@@ -61,19 +16,49 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
-#base_jam {
+.jam_emporium {
+    font-size: 3vw;
+    padding-left: 20px;
+}
+
+.homepage_links {
+    display:flex;
+    flex-direction: column;
+    align-items: 69px;
+    padding-left: 100px;
+    padding-top: 160px;
+
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.2vw;
-    line-height: 60px;
+    font-size: 3vw;
+    line-height: 79px;
     text-transform: lowercase;
+}
+
+.homepage_links > a {
     color: rgba(39, 39, 39, 0.6);
 }
 
+
+.details > a {
+    color:rgba(39, 39, 39, 0.6);
+}
+
+
+.index_background {
+    background: url("/static/images/paper.png");
+    background-repeat:repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+
 .menu {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: flex-start;
+
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
@@ -81,6 +66,10 @@
     line-height: 48px;
     text-transform: lowercase;
     list-style: none;
+}
+
+.menu > li {
+    padding: 10px;
 }
 
 .menu > li > a {
@@ -98,25 +87,9 @@
 }
 
 #border {
-    border: 1px solid #000000;
-    transform: rotate(90deg);
+    border-left: 1px solid #000000;
 }
 
-.index_vendors {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-width: 60px;
-    column-gap: 40px;
-}
-
-.index_products {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.add_vendor {
-
-}
 
 #add_vendor > a {
     color: rgba(39, 39, 39, 0.6);
