@@ -1,26 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for vendor in all_vendors %}
+<div class="index_vendors">
+    {% for vendor in all_vendors %}
     <div>
-        {{vendor.first_name}} {{vendor.last_name}}
+        <div>
+            {{vendor.first_name}} {{vendor.last_name}}
+        </div>
+
+        <a href="vendors/{{vendor.id}}">
+            <button>
+                Details
+            </button>
+        </a>  
     </div>
-
-    <a href="vendors/{{vendor.id}}">
-        <button>
-            Details
-        </button>
-    </a>  
-
-{% endfor %}
-
-<br>
-<div>
-    <a href="/vendors/new">
-        <button>
-            Add Vendor
-        </button>
-    </a>
+    {% endfor %}
 </div>
+
+    <br>
+
+    <div id="add_vendor">
+        <a href="/vendors/new">
+            <div class="add_vendor">
+                Add Vendor
+            </div>
+        </a>
+    </div>
 
 {% endblock %}

@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div>
+
 {{vendor.first_name}} {{vendor.last_name}}
 
 <p><a href="/vendors/{{vendor.id}}/edit">
@@ -15,5 +17,6 @@
         </form>
     </div>
 
+</div>
 
 {% endblock %}

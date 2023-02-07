@@ -151,10 +151,6 @@
     font-size: 20px;
     line-height: 60px;
     text-transform: lowercase;
-
-    display: grid;
-    grid-template-columns: 30%, 30%, 30%;
-    grid-area: 1 / col4-start / last-line / 6;
 }
 
 #border {
@@ -165,5 +161,37 @@
 
     border: 1px solid #000000;
     transform: rotate(90deg);
+}
+
+.index_vendors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-width: 60px;
+    column-gap: 40px;
+}
+
+.index_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.add_vendor {
+    position:relative;
+    left: 175%;
+    margin-top: 120%;
+}
+
+#add_vendor > a {
+    color: rgba(39, 39, 39, 0.6);
+}
+
+.add_product {
+    position:relative;
+    left: 175%;
+    margin-top: 140%;
+}
+
+#add_product > a {
+    color: rgba(39, 39, 39, 0.6);
 }
 
