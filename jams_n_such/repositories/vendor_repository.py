@@ -5,8 +5,8 @@ from models.product import Product
 
 
 def save(vendor):
-    sql = "INSERT INTO vendors (first_name, last_name) VALUES (%s, %s) RETURNING *"
-    values = [vendor.first_name, vendor.last_name]
+    sql = "INSERT INTO vendors (first_name, last_name, species, trade) VALUES (%s, %s, %s, %s) RETURNING *"
+    values = [vendor.first_name, vendor.last_name, vendor.species, vendor.trade]
     results = run_sql(sql, values)
     id = results[0]['id']
     vendor.id = id
@@ -20,7 +20,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        vendor = Vendor(row['first_name'], row['last_name'], row['id'] )
+        vendor = Vendor(row['first_name'], row['last_name'], row['species'], row['trade'], row['id'] )
         vendors.append(vendor)
     return vendors
 
@@ -33,7 +33,7 @@ def select(id):
 
     if results:
         result = results[0]
-        vendor = Vendor(result['first_name'], result['last_name'], result['id'] )
+        vendor = Vendor(result['first_name'], result['last_name'], result['species'], result['trade'], result['id'] )
     return vendor
 
 
@@ -49,8 +49,8 @@ def delete(id):
 
 
 def update(vendor):
-    sql = "UPDATE vendors SET (first_name, last_name) = (%s, %s) WHERE id = %s"
-    values = [vendor.first_name, vendor.last_name, vendor.id]
+    sql = "UPDATE vendors SET (first_name, last_name, species, trade) = (%s, %s, %s, %s) WHERE id = %s"
+    values = [vendor.first_name, vendor.last_name, vendor.id, vendor.species, vendor.trade]
     run_sql(sql, values)
 
 

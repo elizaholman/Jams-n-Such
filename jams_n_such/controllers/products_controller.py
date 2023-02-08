@@ -82,7 +82,9 @@ def new_vendor():
 def create_vendor():
     first_name = request.form["first_name"]
     last_name = request.form["last_name"]
-    vendor = Vendor(first_name, last_name)
+    species = request.form["species"]
+    trade = request.form["trade"]
+    vendor = Vendor(first_name, last_name, species, trade)
     vendor_repository.save(vendor)
     return redirect("/vendors")
 
@@ -95,7 +97,9 @@ def edit_vendor(id):
 def update_vendor(id):
     first_name = request.form["first_name"]
     last_name = request.form["last_name"]
-    vendor = Vendor(first_name, last_name, id)
+    species = request.form["species"]
+    trade = request.form["trade"]
+    vendor = Vendor(first_name, last_name, species, trade, id)
     vendor_repository.update(vendor)
     return redirect("/vendors")
 

@@ -67,9 +67,24 @@
     font-size: 3vw;
     line-height: 79px;
     text-transform: lowercase;
+    width: 300px;
 }
 
+.filter_container {
+    position: absolute;
+    width: 300px;
+    height: 497px;
+    left: 116px;
+    top: 360px;
 
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 79px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
 
 .link {
     color: rgba(39, 39, 39, 0.6);

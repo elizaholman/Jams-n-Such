@@ -2,8 +2,8 @@
 {% block content %}
 
 
-<div class="subtitle"> Toby's Wares </div>
 
+<div class="subtitle"> Toby's Wares </div>
 
     <div class="sub_index">
         {% for product in all_products %}
@@ -12,12 +12,16 @@
                     <b>{{product.name}}</b>
                 </div>
 
+    <div>
+        <b>Selling Price:&nbsp;</b>{{product.selling_price}} bugs
+    </div>
+
                     {% if product.stock_quantity >= 2  %}
                         In Stock
                     {% elif product.stock_quantity == 0 %}
-                        Out of Stock
+                        Out of Stock!!!
                     {% else %}
-                        Low Stock
+                        Low Stock!
                     {% endif %}
 
 
@@ -39,5 +43,6 @@
         </button>
     </a>
 </div>
+
 
 {% endblock %}

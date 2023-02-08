@@ -4,7 +4,9 @@ DROP TABLE IF EXISTS vendors;
 CREATE TABLE vendors (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(255),
-    last_name VARCHAR(255)
+    last_name VARCHAR(255),
+    species VARCHAR(255),
+    trade VARCHAR(255)
 );
 
 CREATE TABLE products (
