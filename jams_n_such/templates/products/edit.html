@@ -8,39 +8,41 @@
     <form action="/products/{{product.id}}" method="post">
         <div>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" value="{{ product.name }}" required autofocus>
+            <input class="input" type="text" id="name" name="name" placeholder="Name" value="{{ product.name }}" required autofocus>
         </div>
         
         <div>
             <label for="description">Description:</label>
-            <input type="text" id="description" name="description" placeholder="Description" value="{{ product.description }}" required>
+            <input class="input" type="text" id="description" name="description" placeholder="Description" value="{{ product.description }}" required>
         </div>
         
         <div>
             <label for="buying_price">Buying Cost:</label>
-            <input type="text" id="buying_price" name="buying_price" placeholder="Buying Cost" value="{{ product.buying_price }}" required>
+            <input class="input" type="text" id="buying_price" name="buying_price" placeholder="Buying Cost" value="{{ product.buying_price }}" required>
         </div>
 
         <div>
             <label for="selling_price">Selling Price:</label>
-            <input type="text" id="selling_price" name="selling_price" placeholder="Selling Price" value="{{ product.selling_price }}" required>
+            <input class="input" type="text" id="selling_price" name="selling_price" placeholder="Selling Price" value="{{ product.selling_price }}" required>
         </div>
 
         <div>
             <label for="stock_quantity">Stock Quantity:</label>
-            <input type="text" id="stock_quantity" name="stock_quantity" placeholder="Stock Quantity" value="{{ product.stock_quantity }}" required>
+            <input class="input" type="text" id="stock_quantity" name="stock_quantity" placeholder="Stock Quantity" value="{{ product.stock_quantity }}" required>
         </div>
 
         <div>
             <label for="vendor">Vendor:</label>
-            <select id="vendor" name="vendor_id">
+            <select class="input" id="vendor" name="vendor_id">
                 {% for vendor in all_vendors %}
                 <option value= "{{vendor.id}}"> {{vendor.first_name}} {{vendor.last_name}} </option>
                 {% endfor %}
             </select>
         </div>
         
-            <button type="submit">Edit Product</button>
+        <div class="buttons_placement">
+            <button class="buttons" type="submit">Edit Product</button>
+        </div>
     </form>
 </div>
 

@@ -5,20 +5,20 @@
 
 <div class="show_index">
     <div>
-        Vendor: {{product.vendor.first_name}} {{product.vendor.last_name}} <br>
-        Product: {{product.name}} <br>
-        Description: {{product.description}}<br>
-        Stock: {{product.stock_quantity}}<br>
-        Buying Cost: {{product.buying_price}} bugs<br>
-        Selling Price: {{product.selling_price}} bugs<br>
-        Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
+        <b>Vendor:</b> {{product.vendor.first_name}} {{product.vendor.last_name}} <br>
+        <b>Product:</b> {{product.name}} <br>
+        <b>Description:</b> {{product.description}}<br>
+        <b>Stock:</b> {{product.stock_quantity}}<br>
+        <b>Buying Cost:</b> {{product.buying_price}} bugs<br>
+        <b>Selling Price:</b> {{product.selling_price}} bugs<br>
+        <b>Mark up:</b> {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
     </div>
 </div>
 
 
-<div class="buttons">
+<div class="buttons_placement">
     <a href="/products/{{product.id}}/edit">
-        <button>
+        <button class="buttons">
             Edit
         </button>
     </a>
@@ -26,7 +26,7 @@
 
     <div>
         <form action="/products/{{product.id}}/delete" method="POST">
-            <button>Delete</button>
+            <button class="buttons">Delete</button>
         </form>
     </div>
 </div>

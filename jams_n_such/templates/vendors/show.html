@@ -7,16 +7,16 @@
     {{vendor.first_name}} {{vendor.last_name}}
     </div>
 
-    <div class="buttons">
+    <div class="buttons_placement">
         <a href="/vendors/{{vendor.id}}/edit">
-            <button>
+            <button class="buttons">
                 Update info
             </button>
         </a>
 
             <div>
                 <form action="/vendors/{{vendor.id}}/delete" method="POST">
-                    <button>Fire</button>
+                    <button class="buttons">Fire</button>
                 </form>
             </div>
         </div>

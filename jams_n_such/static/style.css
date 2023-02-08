@@ -22,9 +22,6 @@
 
 
 .base_content {
-    display: grid;
-    grid-row-start: 1;
-    grid-column-start: 1;
     display: flex;
     justify-content: center;
 }
@@ -71,6 +68,7 @@
     line-height: 79px;
     text-transform: lowercase;
 }
+
 
 
 .link {
@@ -126,15 +124,17 @@
     line-height: 60px;
     text-transform: lowercase;
     color: rgba(39, 39, 39, 0.6);
+    height: 100vh;
 }
 
-
-.add_button > a {
-    position: bottom;
+.add {
     display: flex;
     justify-content: center;
-    color: rgba(39, 39, 39, 0.6);
+    align-items: end;
+}
 
+.add > a {
+    color: rgba(39, 39, 39, 0.6);
 }
 
 
@@ -165,9 +165,44 @@
 }
 
 
-.buttons {
+.buttons_placement {
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: "Gloria Hallelujah";
+    text-transform: lowercase;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color:  rgba(39, 39, 39, 0.6);
+    background-color: transparent;
+    border: 2px solid rgba(39, 39, 39, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 9px #746d6d;
+}
+
+.buttons:hover {
+    background-color: transparent
+}
+
+.buttons:active {
+    background-color: transparent;
+    box-shadow: 0 5px #545454;
+    transform: translateY(4px);
+}
+
+.input {
+    border: 2px solid rgba(39, 39, 39, 0.6);
+    background-color: transparent;
+    color: rgba(39, 39, 39, 0.6);
+    border-radius: 5px;
+    font-family: "Gloria Hallelujah";
 }

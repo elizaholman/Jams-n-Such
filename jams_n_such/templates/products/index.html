@@ -9,16 +9,17 @@
         {% for product in all_products %}
             <div class="loop">
                 <div>
-                    {{product.name}}
+                    <b>{{product.name}}</b>
                 </div>
 
-                {% if product.stock_quantity >= 2  %}
-                    In Stock
-                {% elif product.stock_quantity == 0 %}
-                    Out of Stock
-                {% else %}
-                    Low Stock
-                {% endif %}
+                    {% if product.stock_quantity >= 2  %}
+                        In Stock
+                    {% elif product.stock_quantity == 0 %}
+                        Out of Stock
+                    {% else %}
+                        Low Stock
+                    {% endif %}
+
 
                 <div class="details">
                     <a class="link" href="products/{{product.id}}">
@@ -31,9 +32,11 @@
 
 
 
-<div class="add_button">
+<div class="add">
     <a class="link" href="/products/new">
+        <button class="buttons">
             Add Product
+        </button>
     </a>
 </div>
 
