@@ -75,6 +75,10 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
+.link:hover {
+    text-shadow: 2px 2px 5px rgba(39, 39, 39, 0.367);
+}
+
 
 .menu {
     display: flex;
@@ -206,3 +210,8 @@
     border-radius: 5px;
     font-family: "Gloria Hallelujah";
 }
+
+.input::placeholder{
+    color: rgba(39, 39, 39, 0.6);
+}
+

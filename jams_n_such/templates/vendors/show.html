@@ -1,25 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="subtitle">Vendor Details</div>
+    <div class="subtitle">Vendor Details</div>
 
-    <div class="show_index">
-    {{vendor.first_name}} {{vendor.last_name}}
+<div class="show_index">
+    <div>
+        {{vendor.first_name}} {{vendor.last_name}}
     </div>
+</div>
 
-    <div class="buttons_placement">
-        <a href="/vendors/{{vendor.id}}/edit">
-            <button class="buttons">
-                Update info
-            </button>
-        </a>
+<div class="buttons_placement">
+    <a href="/vendors/{{vendor.id}}/edit">
+        <button class="buttons">
+            Update info
+        </button>
+    </a>
 
-            <div>
-                <form action="/vendors/{{vendor.id}}/delete" method="POST">
-                    <button class="buttons">Fire</button>
-                </form>
-            </div>
+        <div>
+            <form action="/vendors/{{vendor.id}}/delete" method="POST">
+                <button class="buttons">Fire</button>
+            </form>
         </div>
+    </div>
 </div>
 
 {% endblock %}
