@@ -5,13 +5,13 @@
 
 <div class="show_index">
     <div>
-        <b>Vendor:</b> {{product.vendor.first_name}} {{product.vendor.last_name}} <br>
-        <b>Product:</b> {{product.name}} <br>
-        <b>Description:</b> {{product.description}}<br>
-        <b>Stock:</b> {{product.stock_quantity}}<br>
-        <b>Buying Cost:</b> {{product.buying_price}} bugs<br>
-        <b>Selling Price:</b> {{product.selling_price}} bugs<br>
-        <b>Mark up:</b> {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
+        <b>Vendor:</b> &emsp;{{product.vendor.first_name}} {{product.vendor.last_name}} <br>
+        <b>Product:</b> &emsp;{{product.name}} <br>
+        <b>Description:</b> &emsp;{{product.description}}<br>
+        <b>Stock:</b> &emsp;{{product.stock_quantity}}<br>
+        <b>Buying Cost:</b> &emsp;{{product.buying_price}} bugs<br>
+        <b>Selling Price:</b> &emsp;{{product.selling_price}} bugs<br>
+        <b>Mark up:</b> &emsp;{% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
     </div>
 </div>
 
