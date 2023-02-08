@@ -14,7 +14,7 @@
 #container {
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 30% 70%;
+
 }
 
 
@@ -110,40 +110,36 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
+
+
 #add_product > a {
+    position: bottom;
+    display: flex;
+    justify-content: center;
     color: rgba(39, 39, 39, 0.6);
+
 }
 
 
-.index_products {
+.sub_index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 30px;
     margin: 30px;
     gap: 20px;
-    
 }
 
-#product_loop {
+
+
+.loop {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    border: 1px solid rgba(39, 39, 39, 0.6);
+    border: 2px solid rgba(39, 39, 39, 0.6);
     border-radius: 20px;
 }
 
 
-/* .add_product {
-    display: flex;
-    justify-content: center;
-    position: bottom;
-    
-} */
-/* 
-#border {
-    border-left: 10px solid #000000;
-    height: 500px;
-} */
 
 
