@@ -1,21 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="subtitle">Product Details</div>
+
+<div class="show_index">
     <div>
-        Vendor: {{product.vendor.first_name}} {{product.vendor.last_name}}
-        Product: {{product.name}}
-        Description: {{product.description}}
-        Stock: {{product.stock_quantity}}
-        Buying Cost: {{product.buying_price}}
-        Selling Price: {{product.selling_price}}
-        Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%
+        Vendor: {{product.vendor.first_name}} {{product.vendor.last_name}} <br>
+        Product: {{product.name}} <br>
+        Description: {{product.description}}<br>
+        Stock: {{product.stock_quantity}}<br>
+        Buying Cost: {{product.buying_price}}<br>
+        Selling Price: {{product.selling_price}}<br>
+        Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
     </div>
+</div>
 
     <p><a href="/products/{{product.id}}/edit">
         <button>
             Edit
         </button>
     </a></p>
+
 
     <div>
         <form action="/products/{{product.id}}/delete" method="POST">
