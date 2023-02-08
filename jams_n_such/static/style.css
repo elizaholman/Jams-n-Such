@@ -13,7 +13,7 @@
 
 #container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 30% 70%;
 }
 
@@ -99,7 +99,7 @@
     font-family: 'Gloria Hallelujah';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2vw;
     line-height: 60px;
     text-transform: lowercase;
     color: rgba(39, 39, 39, 0.6);
@@ -117,17 +117,29 @@
 
 .index_products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 30px;
     margin: 30px;
+    gap: 20px;
+    
 }
 
-.add_product {
+#product_loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid rgba(39, 39, 39, 0.6);
+    border-radius: 20px;
+}
+
+
+/* .add_product {
     display: flex;
     justify-content: center;
     position: bottom;
     
-}
+} */
 /* 
 #border {
     border-left: 10px solid #000000;
