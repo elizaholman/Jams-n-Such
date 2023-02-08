@@ -112,7 +112,7 @@
 
 
 
-#add_product > a {
+.add_button > a {
     position: bottom;
     display: flex;
     justify-content: center;
