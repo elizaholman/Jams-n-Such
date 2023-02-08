@@ -11,6 +11,13 @@
     margin: 0;
 }
 
+#container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+}
+
+
 .base_content {
     display: flex;
     justify-content: center;
@@ -20,6 +27,7 @@
 .subtitle {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
     font-size: 3vw;
 }
 
