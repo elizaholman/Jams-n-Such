@@ -9,17 +9,19 @@
         Product: {{product.name}} <br>
         Description: {{product.description}}<br>
         Stock: {{product.stock_quantity}}<br>
-        Buying Cost: {{product.buying_price}}<br>
-        Selling Price: {{product.selling_price}}<br>
+        Buying Cost: {{product.buying_price}} bugs<br>
+        Selling Price: {{product.selling_price}} bugs<br>
         Mark up: {% print"{:.0f}".format(((product.selling_price - product.buying_price)/product.buying_price)*100) %}%<br>
     </div>
 </div>
 
-    <p><a href="/products/{{product.id}}/edit">
+
+<div class="buttons">
+    <a href="/products/{{product.id}}/edit">
         <button>
             Edit
         </button>
-    </a></p>
+    </a>
 
 
     <div>
@@ -27,5 +29,6 @@
             <button>Delete</button>
         </form>
     </div>
+</div>
 
 {% endblock %}

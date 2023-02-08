@@ -5,8 +5,8 @@
 }
 
 .index_background {
-    background: url("/static/images/paper.png");
-    background-repeat:repeat;
+    background: url("/static/images/jams_background_2.jpg");
+    background-repeat:no-repeat;
     background-size: cover;
     margin: 0;
 }
@@ -15,10 +15,14 @@
 #container {
     display: grid;
     grid-template-columns: 30% 70%;
+    grid-template-rows: 90% 10%;
 }
 
 
 .base_content {
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
     display: flex;
     justify-content: center;
 }
@@ -67,13 +71,8 @@
 }
 
 
-.homepage_links > a {
+.link {
     color: rgba(39, 39, 39, 0.6);
-}
-
-
-.details > a {
-    color:rgba(39, 39, 39, 0.6);
 }
 
 
@@ -101,6 +100,23 @@
     color: rgba(39, 39, 39, 0.6);
 }
 
+.policy {
+    display:grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-end;
+
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75vw;
+    line-height: 48px;
+    text-transform: lowercase;
+    color: rgba(39, 39, 39, 0.6);
+}
 
 .block {
     font-family: 'Gloria Hallelujah';
@@ -123,11 +139,14 @@
 
 
 .sub_index {
+    grid-row-start: 1;
+    grid-column-start: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 30px;
     margin: 30px;
     gap: 30px;
+    padding: 30px;
 }
 
 
@@ -140,9 +159,19 @@
     border-radius: 20px;
 }
 
+
 .show_index {
+    grid-row-start: 1;
+    grid-column-start: 2;
     padding-top: 100px;
     display: flex;
     justify-content: center;
 }
 
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}

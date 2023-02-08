@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Toby-Toad</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <title>Toby-Toad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  </head>
 
-<div id="container">
-  <body class="index_background">
+  <div id="container">
 
-  <div class="base_content">
-    <header>
-      <div class="title">
-        <div>Toby-Toad's</div> 
-        <div class="jam_emporium">Jam Emporium</div>
-      </div>
+    <body class="index_background">
 
-    <div>
-      <nav>
-        <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/products">Toby's Wares</a></li>
-          <li><a href="/vendors">Vendors</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+    <div class="base_content">
+      <header>
+        <div class="title">
+          <div>Toby-Toad's</div> 
+          <div class="jam_emporium">Jam Emporium</div>
+        </div>
 
-    <div class="block">
-      {% block content %}
-      {% endblock %}
+      <div>
+        <nav>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Toby's Wares</a></li>
+            <li><a href="/vendors">Vendors</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-  </body>
-</div>
+      <div class="block">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <div class="policy">
+        Company policy: no ant
+      </div>
+      
+    </body>
+
+  </div>
 </html>
 

@@ -3,22 +3,23 @@
 
 <div class="subtitle">Vendor Details</div>
 
-<div class="show_index">
-{{vendor.first_name}} {{vendor.last_name}}
-</div>
-
-<p><a href="/vendors/{{vendor.id}}/edit">
-    <button>
-        Edit
-    </button>
-</a></p>
-
-    <div>
-        <form action="/vendors/{{vendor.id}}/delete" method="POST">
-            <button>Delete</button>
-        </form>
+    <div class="show_index">
+    {{vendor.first_name}} {{vendor.last_name}}
     </div>
 
+    <div class="buttons">
+        <a href="/vendors/{{vendor.id}}/edit">
+            <button>
+                Update info
+            </button>
+        </a>
+
+            <div>
+                <form action="/vendors/{{vendor.id}}/delete" method="POST">
+                    <button>Fire</button>
+                </form>
+            </div>
+        </div>
 </div>
 
 {% endblock %}
