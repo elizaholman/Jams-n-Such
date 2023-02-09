@@ -70,7 +70,7 @@
     width: 300px;
 }
 
-.filter_container {
+.filter_by {
     position: absolute;
     width: 300px;
     height: 497px;
@@ -83,7 +83,7 @@
     font-size: 40px;
     line-height: 79px;
 
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.419);
 }
 
 .link {
