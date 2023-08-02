@@ -30,3 +30,4 @@ As well as showing stock quantity as a number, the app should visually highlight
     <li>CSS</li>
    </ul>
 
+![Alt text](/relative/path/to/screenshots/homepage.png?raw=true "Homepage")
