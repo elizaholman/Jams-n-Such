@@ -30,4 +30,15 @@ As well as showing stock quantity as a number, the app should visually highlight
     <li>CSS</li>
    </ul>
 
-![](screenshots/homepage.png?raw=true "Optional Title")
+## Homepage
+![](./jams_n_such/screenshots/homepage.png?raw=true "Optional Title")
+## Inventory
+![](./jams_n_such/screenshots/inventory.png?raw=true "Optional Title")
+## Product Details
+![](./jams_n_such/screenshots/productDetails.png?raw=true "Optional Title")
+## Add Product
+![](./jams_n_such/screenshots/addProduct.png?raw=true "Optional Title")
+## Vendors
+![](./jams_n_such/screenshots/vendors.png?raw=true "Optional Title")
+## Vendor Details
+![](./jams_n_such/screenshots/vendorDetails.png?raw=true "Optional Title")
